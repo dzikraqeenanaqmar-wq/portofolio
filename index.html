@@ -1,0 +1,517 @@
+
+  line-height: 1.7;
+}
+
+.container {
+  width: 88%;
+  max-width: 1050px;
+  margin: auto;
+}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Qeenan — Personal Space</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --bg: #101216;
+  --card: #181c22;
+  --text: #e4e6e9;
+  --muted: #858e9a;
+  --accent: #8298b2;
+  --line: #292e36;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* NAVBAR */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.logo {
+  font-family: 'Playfair Display', serif;
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 12px;
+  margin-left: 20px;
+  transition: .3s;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+/* HERO */
+
+.hero {
+  padding: 100px 0 90px;
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  gap: 50px;
+  align-items: center;
+}
+
+.small-title {
+  color: var(--accent);
+  font-size: 11px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(55px, 8vw, 90px);
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 20px 0;
+}
+
+.hero h1 span {
+  color: var(--accent);
+  font-style: italic;
+}
+
+.hero p {
+  color: var(--muted);
+  max-width: 430px;
+  font-size: 14px;
+}
+
+.hero-image {
+  height: 390px;
+  overflow: hidden;
+  border-radius: 5px;
+  background: var(--card);
+}
+
+.hero-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(.75) saturate(.7);
+}
+
+/* SECTION */
+
+section {
+  padding: 75px 0;
+  border-top: 1px solid var(--line);
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 35px;
+  font-weight: 500;
+  margin: 12px 0 35px;
+}
+
+.section-label {
+  color: var(--accent);
+  letter-spacing: 3px;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* ABOUT */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  margin-bottom: 32px;
+}
+
+.about-text {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.info-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.info {
+  border-bottom: 1px solid var(--line);
+  padding: 12px 0;
+}
+
+.info small {
+  display: block;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.info strong {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* INTEREST */
+
+.interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.interest-card {
+  padding: 25px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  transition: .3s;
+}
+
+.interest-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.interest-card h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.interest-card p {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+/* MUSIC */
+
+.music-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.music {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.music img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 3px;
+  filter: brightness(.8);
+}
+
+.music h3 {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.music p {
+  color: var(--muted);
+  font-size: 12px;
+}
+
+
+/* QUOTE */
+
+.quote {
+  text-align: center;
+  padding: 90px 20px;
+}
+
+.quote h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(25px, 5vw, 42px);
+  font-weight: 500;
+  font-style: italic;
+}
+
+.quote p {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-top: 20px;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 30px 0;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 11px;
+}
+
+/* MOBILE */
+
+@media(max-width: 700px) {
+  .hero {
+    grid-template-columns: 1fr;
+    padding: 65px 0;
+    gap: 30px;
+  }
+
+  .hero-image {
+    height: 320px;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .interest-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery img {
+    height: 190px;
+  }
+
+  nav a {
+    margin-left: 9px;
+    font-size: 10px;
+  }
+
+  footer {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<nav>
+  <div class="logo">Q.</div>
+  <div>
+    <a href="#about">TENTANG</a>
+    <a href="#interest">INTEREST</a>
+    <a href="#music">MUSIK</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+
+<header class="hero">
+  <div>
+    <div class="small-title">PERSONAL SPACE — 001</div>
+    <h1>Hallo,<br>aku <span>Qeenan.</span></h1>
+    <p>
+      Hanya seseorang yang menikmati momen tenang, musik pelan, game, dan melakukan segala hal dengan ritme sendiri. Selamat datang di ruang kecilku.
+    </p>
+  </div>
+
+  <div class="hero-image">
+    <img src="images/main.jpg" alt="Main picture of Qeenan">
+  </div>
+</header>
+
+<!-- ABOUT -->
+
+<section id="about">
+  <div class="section-label">01 — TENTANGKU</div>
+  <h2 class="section-title">Beberapa hal tentangku.</h2>
+
+  <div class="about-grid">
+    <p class="about-text">
+      Namaku Qeenan, tapi beberapa orang mengenalku dengan nama lain. Aku adalah seorang INTP yang menikmati waktu sendiri dan punya ruang pribadi sendiri.
+      <br><br>
+      Aku cukup santai, tapi aku bisa diandalkan
+      kapanpun ada sesuatu yang perlu diselesaikan.
+      Aku lebih suka momen yang tenang dibandingkan yang ramai.
+    </p>
+
+    <div class="info-list">
+      <div class="info">
+        <small>Nama Lengkap</small>
+        <strong>Dzikra Qeenan Aqmar</strong>
+      </div>
+      <div class="info">
+        <small>Panggilan</small>
+        <strong>Qeenan</strong>
+      </div>
+      <div class="info">
+        <small>Ulang Tahun</small>
+        <strong>25 Juni</strong>
+      </div>
+      <div class="info">
+        <small>Zodiak</small>
+        <strong>Cancer</strong>
+      </div>
+      <div class="info">
+        <small>Personalitas</small>
+        <strong>INTP</strong>
+      </div>
+      <div class="info">
+        <small>Kebangsaan</small>
+        <strong>Indonesian</strong>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- INTEREST -->
+
+<section id="interest">
+  <div class="section-label">02 — DUNIAKU</div>
+  <h2 class="section-title">Hal-hal yang aku suka.</h2>
+
+  <div class="interest-grid">
+    <div class="interest-card">
+      <h3>Gaming</h3>
+      <p>Memainkan game dan menikmati waktu luangku.</p>
+    </div>
+
+    <div class="interest-card">
+      <h3>Ketenangan</h3>
+      <p>Tempat yang tenang, kesendirian, dan tidak ada gangguan.</p>
+    </div>
+
+    <div class="interest-card">
+      <h3>Tidur</h3>
+      <p>Salah satu cara favoritku untuk menghabiskan waktu.</p>
+    </div>
+
+    <div class="interest-card">
+      <h3>Makanan</h3>
+      <p>Makanan favorit: Rendang.</p>
+    </div>
+
+    <div class="interest-card">
+      <h3>Warna</h3>
+      <p>Biru dan hitam. Sederhana namun tak lekang oleh waktu.</p>
+    </div>
+
+    <div class="interest-card">
+      <h3>Personalitas</h3>
+      <p>Chill, independent, and dependable when needed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- MUSIC -->
+
+<section id="music">
+  <div class="section-label">03 — MUSIK</div>
+  <h2 class="section-title">Musik yang saya suka.</h2>
+
+  <div class="music-list">
+
+    <div class="music">
+      <img src="w2e.jpg" alt="wave to earth">
+      <div>
+        <h3>Wave to Earth</h3>
+        <p>Soft sounds, slow days.</p>
+      </div>
+    </div>
+
+    <div class="music">
+      <img src="magnolia.jpg" alt="Magnolia Celebration">
+      <div>
+        <h3>Magnolia Celebration</h3>
+        <p>Musik yang saya nikmati.</p>
+      </div>
+    </div>
+
+    <div class="music">
+      <img src="roc.jpg" alt="Rex Orange County">
+      <div>
+        <h3>Rex Orange County</h3>
+        <p>Musik yang saya nikmati dan juga artis favorit saya.</p>
+      </div>
+    </div>
+
+    <div class="music">
+      <img src="Nadin.jpg" alt="Nadin Amizah">
+      <div>
+        <h3>Nadin Amizah</h3>
+        <p>Musik yang saya nikmati dan juga artis favorit saya.</p>
+      </div>
+    </div>
+
+      </div>
+</section>
+
+<!-- FAVORITE CHARACTER -->
+
+<section>
+  <div class="section-label">04 — KARAKTER FAVORIT</div>
+  <h2 class="section-title">Karakter yang saya cintai.</h2>
+
+  <div class="about-grid">
+    <div class="hero-image">
+      <img src="reze.jpg" alt="Reze from Chainsaw Man">
+    </div>
+
+    <div>
+      <h2 style="font-family:'Playfair Display';font-size:36px;margin-bottom:15px;">
+        Reze.
+      </h2>
+      <p class="about-text">
+        Karakter favorit saya dari Chainsaw Man.
+        Juga film favorit saya:
+        Chainsaw Man – The Movie: Reze Arc.
+      </p>
+    </div>
+  </div>
+
+  <div class="about-grid">
+    <div class="hero-image">
+      <img src="violet.jpg" alt="Violet from Violet Evergarden">
+    </div>
+
+    <div>
+      <h2 style="font-family:'Playfair Display';font-size:36px;margin-bottom:15px;">
+        Violet.
+      </h2>
+      <p class="about-text">
+        Karakter favorit saya dari Anime Violet Evergarden.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <span>© 2026 — Qeenan's Personal Space</span>
+  <span>Made with a little peace.</span>
+</footer>
+
+</div>
+</body>
+</html>
