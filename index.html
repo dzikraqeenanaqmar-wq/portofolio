@@ -1,12 +1,3 @@
-
-  line-height: 1.7;
-}
-
-.container {
-  width: 88%;
-  max-width: 1050px;
-  margin: auto;
-}
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -37,6 +28,13 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: 'DM Sans', sans-serif;
+  line-height: 1.7;
+}
+
+.container {
+  width: 88%;
+  max-width: 1050px;
+  margin: auto;
 }
 
 /* NAVBAR */
@@ -144,7 +142,6 @@ section {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 45px;
-  margin-bottom: 32px;
 }
 
 .about-text {
@@ -238,6 +235,27 @@ section {
   font-size: 12px;
 }
 
+/* GALLERY */
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  background: var(--card);
+  filter: brightness(.8) saturate(.7);
+  transition: .4s;
+}
+
+.gallery img:hover {
+  filter: brightness(1);
+  transform: scale(1.02);
+}
 
 /* QUOTE */
 
@@ -322,7 +340,7 @@ footer {
   <div>
     <a href="#about">TENTANG</a>
     <a href="#interest">INTEREST</a>
-    <a href="#music">MUSIK</a>
+    <a href="#music">MUSIk</a>
   </div>
 </nav>
 
@@ -338,23 +356,23 @@ footer {
   </div>
 
   <div class="hero-image">
-    <img src="images/main.jpg" alt="Main picture of Qeenan">
+    <img src="50aa4cd4-56dd-471a-b8ad-849c972fd715.jpg" alt="Main picture of Qeenan">
   </div>
 </header>
 
 <!-- ABOUT -->
 
 <section id="about">
-  <div class="section-label">01 — TENTANGKU</div>
-  <h2 class="section-title">Beberapa hal tentangku.</h2>
+  <div class="section-label">01 — ABOUT ME</div>
+  <h2 class="section-title">A little about myself.</h2>
 
   <div class="about-grid">
     <p class="about-text">
       Namaku Qeenan, tapi beberapa orang mengenalku dengan nama lain. Aku adalah seorang INTP yang menikmati waktu sendiri dan punya ruang pribadi sendiri.
       <br><br>
-      Aku cukup santai, tapi aku bisa diandalkan
+      Aku cukup santai, tetapi aku bisa diandalkan
       kapanpun ada sesuatu yang perlu diselesaikan.
-      Aku lebih suka momen yang tenang dibandingkan yang ramai.
+      Aku lebih suka momen yang tenang daripada yang ramai.
     </p>
 
     <div class="info-list">
@@ -376,11 +394,11 @@ footer {
       </div>
       <div class="info">
         <small>Personalitas</small>
-        <strong>INTP</strong>
+        <strong>INTP-T</strong>
       </div>
       <div class="info">
-        <small>Kebangsaan</small>
-        <strong>Indonesian</strong>
+        <small>Kewarganegaraan</small>
+        <strong>Indonesia</strong>
       </div>
     </div>
   </div>
@@ -389,7 +407,7 @@ footer {
 <!-- INTEREST -->
 
 <section id="interest">
-  <div class="section-label">02 — DUNIAKU</div>
+  <div class="section-label">02 — DUNIA KECILKU</div>
   <h2 class="section-title">Hal-hal yang aku suka.</h2>
 
   <div class="interest-grid">
@@ -399,8 +417,8 @@ footer {
     </div>
 
     <div class="interest-card">
-      <h3>Ketenangan</h3>
-      <p>Tempat yang tenang, kesendirian, dan tidak ada gangguan.</p>
+      <h3>Kenyamanan</h3>
+      <p>Tempat yang tenang, menjadi sendiri, dan tidak ada gangguan.</p>
     </div>
 
     <div class="interest-card">
@@ -415,12 +433,12 @@ footer {
 
     <div class="interest-card">
       <h3>Warna</h3>
-      <p>Biru dan hitam. Sederhana namun tak lekang oleh waktu.</p>
+      <p>Biru dan hitam. Sederhana tapi nyaman.</p>
     </div>
 
     <div class="interest-card">
       <h3>Personalitas</h3>
-      <p>Chill, independent, and dependable when needed.</p>
+      <p>tenang, mandiri, dan dapat diandalkan ketika diperlukan.</p>
     </div>
   </div>
 </section>
@@ -429,14 +447,14 @@ footer {
 
 <section id="music">
   <div class="section-label">03 — MUSIK</div>
-  <h2 class="section-title">Musik yang saya suka.</h2>
+  <h2 class="section-title">Jenis musik yang aku suka.</h2>
 
   <div class="music-list">
 
     <div class="music">
       <img src="w2e.jpg" alt="wave to earth">
       <div>
-        <h3>Wave to Earth</h3>
+        <h3>wave to earth</h3>
         <p>Soft sounds, slow days.</p>
       </div>
     </div>
@@ -445,7 +463,7 @@ footer {
       <img src="magnolia.jpg" alt="Magnolia Celebration">
       <div>
         <h3>Magnolia Celebration</h3>
-        <p>Musik yang saya nikmati.</p>
+        <p>Music I enjoy listening to.</p>
       </div>
     </div>
 
@@ -453,7 +471,7 @@ footer {
       <img src="roc.jpg" alt="Rex Orange County">
       <div>
         <h3>Rex Orange County</h3>
-        <p>Musik yang saya nikmati dan juga artis favorit saya.</p>
+        <p>One of my favorites.</p>
       </div>
     </div>
 
@@ -461,18 +479,26 @@ footer {
       <img src="Nadin.jpg" alt="Nadin Amizah">
       <div>
         <h3>Nadin Amizah</h3>
-        <p>Musik yang saya nikmati dan juga artis favorit saya.</p>
+        <p>For the quieter moments.</p>
       </div>
     </div>
 
+    <div class="music">
+      <img src="e949336d5be4931dbc503aecfe9bef10.jpg" alt="Rumahsakit">
+      <div>
+        <h3>Rumahsakit</h3>
+        <p>Another favorite artist.</p>
       </div>
+    </div>
+
+  </div>
 </section>
 
 <!-- FAVORITE CHARACTER -->
 
 <section>
-  <div class="section-label">04 — KARAKTER FAVORIT</div>
-  <h2 class="section-title">Karakter yang saya cintai.</h2>
+  <div class="section-label">04 — FAVORITE CHARACTER</div>
+  <h2 class="section-title">Karakter yang aku cintai.</h2>
 
   <div class="about-grid">
     <div class="hero-image">
@@ -484,24 +510,9 @@ footer {
         Reze.
       </h2>
       <p class="about-text">
-        Karakter favorit saya dari Chainsaw Man.
-        Juga film favorit saya:
+        Karakter favoritku dari Chainsaw Man.
+        Juga film favoritku:
         Chainsaw Man – The Movie: Reze Arc.
-      </p>
-    </div>
-  </div>
-
-  <div class="about-grid">
-    <div class="hero-image">
-      <img src="violet.jpg" alt="Violet from Violet Evergarden">
-    </div>
-
-    <div>
-      <h2 style="font-family:'Playfair Display';font-size:36px;margin-bottom:15px;">
-        Violet.
-      </h2>
-      <p class="about-text">
-        Karakter favorit saya dari Anime Violet Evergarden.
       </p>
     </div>
   </div>
